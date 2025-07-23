@@ -1,0 +1,6 @@
+package ISP.fooddeleiveryplatform;
+
+public interface ICustomerOps {
+     void placeOrder();
+     void rateDriver();
+}

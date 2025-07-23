@@ -1,0 +1,5 @@
+package ii__Structural.c__proxy;
+
+public interface Interner {
+
+}

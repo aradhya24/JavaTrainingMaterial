@@ -1,0 +1,11 @@
+package strategyassighnment.guitar.behaviour.sound;
+
+public class Distortion implements ISoundBehaviour {
+
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

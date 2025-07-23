@@ -1,0 +1,52 @@
+package strategyassighnment.guitar.model;
+
+import strategyassighnment.guitar.behaviour.playingstyle.IPlayingStyleBehaviour;
+import strategyassighnment.guitar.behaviour.sound.ISoundBehaviour;
+import strategyassighnment.guitar.behaviour.tuning.ITuningBehaviour;
+
+public abstract class Guitar {
+
+	IPlayingStyleBehaviour playingStyleBehaviour;
+	ISoundBehaviour soundBehaviour;
+	ITuningBehaviour tuningBehaviour;
+
+	public Guitar() {
+	};
+
+	public abstract void showGuitarInfo();
+	
+	//common code
+	public void polish() {
+		System.out.println("Polishing the guitar body!");
+	}
+	
+    //delgate methods
+	public void changePlayingStyle() {
+		playingStyleBehaviour.play();
+	}
+
+	public void changeSound() {
+		soundBehaviour.sound();
+	}
+
+	public void changeTune() {
+		tuningBehaviour.tuning();
+	}
+    
+	
+	
+	//setters
+	public void setPlayingStyleBehaviour(IPlayingStyleBehaviour playingStyleBehaviour) {
+		System.out.println();
+		this.playingStyleBehaviour = playingStyleBehaviour;
+	}
+
+	public void setSoundBehaviour(ISoundBehaviour soundBehaviour) {
+		this.soundBehaviour = soundBehaviour;
+	}
+
+	public void setTuningBehaviour(ITuningBehaviour tuningBehaviour) {
+		this.tuningBehaviour = tuningBehaviour;
+	}
+
+}

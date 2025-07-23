@@ -1,0 +1,5 @@
+package SOLID.InventoryMS.valuation;
+
+public interface IValuationStrategy {
+    
+}

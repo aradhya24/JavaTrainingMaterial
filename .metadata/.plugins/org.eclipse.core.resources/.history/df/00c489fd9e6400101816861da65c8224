@@ -1,0 +1,13 @@
+package Creational.a__singleton;
+
+public class Test {
+	public static void main(String[] args) {
+       
+		Aradhya a1 = Aradhya.getInstance();
+		Aradhya a2 = Aradhya.getInstance();
+		
+		a1.message();
+		a2.message();
+		System.out.println(a1==a2);
+	}
+}

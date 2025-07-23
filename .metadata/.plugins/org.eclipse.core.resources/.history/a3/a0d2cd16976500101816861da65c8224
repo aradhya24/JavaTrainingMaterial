@@ -1,0 +1,5 @@
+package strategyassighnment.guitar.behaviour.playingstyle;
+
+public interface IPlayingStyleBehaviour {
+     void play();
+}

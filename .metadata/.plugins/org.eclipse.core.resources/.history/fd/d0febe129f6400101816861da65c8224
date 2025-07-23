@@ -1,0 +1,16 @@
+package Creational.c__abstract_factory;
+
+public class Main {
+    public static void main(String[] args) {
+        // Want Apple devices
+        IMobileFactory appleFactory = new AppleFactory();
+        MobileStore appleStore = new MobileStore(appleFactory);
+        appleStore.buildDevices();
+
+        // Want Samsung devices
+        IMobileFactory samsungFactory = new SamsungFactory();
+        MobileStore samsungStore = new MobileStore(samsungFactory);
+        samsungStore.buildDevices();
+    }
+}
+

@@ -1,0 +1,5 @@
+package Creational.b__factory;
+
+public interface IShape {
+	void draw();
+}

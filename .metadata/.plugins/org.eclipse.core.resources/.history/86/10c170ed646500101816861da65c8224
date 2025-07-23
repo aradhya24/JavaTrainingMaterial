@@ -1,0 +1,17 @@
+package iii__Behavioural.b__Mediator;
+
+public class Main {
+    public static void main(String[] args) {
+        ATCMediator atc = new ATCTower();
+
+        Flight flight1 = new Airplane(atc, "Indigo 101");
+        Flight flight2 = new Airplane(atc, "SpiceJet 202");
+
+        atc.setLandingStatus(true); // ATC allows landing
+
+        flight1.requestLanding();
+        flight2.requestLanding(); // Won’t be allowed immediately
+        atc.setLandingStatus(true);
+    }
+}
+

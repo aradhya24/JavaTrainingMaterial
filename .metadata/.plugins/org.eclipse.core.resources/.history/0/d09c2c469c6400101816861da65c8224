@@ -1,0 +1,5 @@
+package Creational.factory;
+
+public class Circle {
+
+}

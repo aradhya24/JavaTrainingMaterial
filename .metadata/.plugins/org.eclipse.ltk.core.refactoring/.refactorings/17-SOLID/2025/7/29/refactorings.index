@@ -1,0 +1,28 @@
+1752584488268	Copy compilation unit
+1752584500570	Delete element
+1752584506114	Delete element
+1752584567781	Rename package 'com.aurionpro.calculator.solution.model'
+1752584598955	Rename package 'com.aurionpro.patientdata.solution.model'
+1752590601229	Delete element
+1752592318121	Rename package 'OCP.solution.claimprocessor'
+1752595364047	Rename package 'DIP.solution.database'
+1752595378479	Rename package 'ISP.solution.educationalsoftware'
+1752595398550	Rename package 'ISP.solution.worker'
+1752595411690	Rename package 'LSP.solution.bankingsystem'
+1752595426016	Rename package 'LSP.solution.shapes'
+1752595439855	Rename package 'OCP.solution.e_walletapp'
+1752595455570	Rename package 'OCP.solution.fd_intrest_calculator.festivalinterest'
+1752595472001	Rename package 'OCP.solution.fd_intrest_calculator.model'
+1752595487577	Rename package 'OCP.solution.fd_intrest_calculator.service'
+1752595509428	Rename package 'OCPfd_intrest_calculator.service'
+1752595525758	Rename package 'OCP.solution.fd_intrest_calculator.test'
+1752595538599	Rename package 'OCP.solution.insuranceclaimprocessing'
+1752595550761	Rename package 'OCP.solution.lms'
+1752595570741	Rename package 'SRP.solution.calculator'
+1752595584117	Rename package 'SRP.solution.ecommerce'
+1752595596781	Rename package 'SRP.solution.healthcare'
+1752595611208	Rename package 'SRP.solution.iot_smarthomesystem'
+1752604194025	Delete element
+1752763440836	Move compilation unit
+1752763630770	Rename package 'SOLID.Valuation'
+1752765733761	Move compilation unit

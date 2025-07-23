@@ -1,0 +1,11 @@
+package strategyassighnment.guitar.test;
+
+import strategyassighnment.guitar.inputservice.GuitarTypeSelector;
+
+public class GuitarTest {
+
+	public static void main(String[] args) {
+		GuitarTypeSelector.selectGuitarType(); 
+	}
+
+}

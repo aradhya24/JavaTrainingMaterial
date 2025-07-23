@@ -1,0 +1,7 @@
+package i__Creational.c__abstract_factory;
+
+public class Ipad implements Tablet {
+    public void build() {
+        System.out.println("Building iPad");
+    }
+}

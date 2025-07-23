@@ -1,0 +1,11 @@
+package Creational.abstract_factory;
+
+public class AppleFactory implements IMobileFactory {
+    public Phone createPhone() {
+        return new IPhone();
+    }
+
+    public Tablet createTablet() {
+        return new IPad();
+    }
+}

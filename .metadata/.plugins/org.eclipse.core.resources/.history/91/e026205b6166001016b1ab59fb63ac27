@@ -1,0 +1,9 @@
+package com.aurionpro.stringprocessortestsuit;
+
+public class StringProcessor {
+	
+	public boolean isPalindrome(String)
+	
+	
+
+}

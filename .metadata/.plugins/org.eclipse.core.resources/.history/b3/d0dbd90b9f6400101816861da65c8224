@@ -1,0 +1,22 @@
+package Creational.d__builder;
+
+public  class Burger {
+    private String bun;
+    private String patty;
+    private String cheese;
+    private String sauce;
+
+    // Constructor
+    public Burger(String bun, String patty, String cheese, String sauce) {
+        this.bun = bun;
+        this.patty = patty;
+        this.cheese = cheese;
+        this.sauce = sauce;
+    }
+
+    @Override
+    public String toString() {
+        return "Burger with " + bun + ", " + patty + ", " + cheese + ", " + sauce;
+    }
+}
+

@@ -1,0 +1,5 @@
+package OCP.solution.insuranceclaimprocessing;
+
+public class ClaimProcessor {
+
+}

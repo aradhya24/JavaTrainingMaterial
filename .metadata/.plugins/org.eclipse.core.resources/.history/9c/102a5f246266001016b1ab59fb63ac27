@@ -1,0 +1,10 @@
+package com.aurionpro.stringprocessortestsuit;
+
+import static org.junit.Assert.assertEquals;
+
+public class StringProcessorTest {
+       
+	void isPalindromeTest() {
+		assertEquals(true, StringProcessor.isPalindrome("mom"));
+	}
+}

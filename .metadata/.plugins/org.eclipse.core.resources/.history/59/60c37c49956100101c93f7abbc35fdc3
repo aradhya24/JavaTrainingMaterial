@@ -1,0 +1,5 @@
+package LSP.solution.shapes;
+
+public interface IShape {
+    double getArea();
+}

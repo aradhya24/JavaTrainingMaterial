@@ -1,0 +1,13 @@
+package com.aurionpro.bankaccoperations;
+
+public class BankAccount {
+      static double ogAmount = 10000;
+     
+     public static double deposit(double amount) {
+    	 return ogAmount+amount;
+     }
+     
+     public static double withdraw(double amount) {
+    	 return ogAmount-amount;
+     }
+}

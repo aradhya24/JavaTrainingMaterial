@@ -1,0 +1,36 @@
+package com.aurionpro.bankaccoperations;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayNameGeneration;
+import org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
+@DisplayNameGeneration(ReplaceUnderscores.class)
+public class BankAccountTest {
+	
+	@BeforeAll
+	void printBeforeLog() {
+		System.out.println("Before start...");
+	}
+	
+	@AfterAll
+	void printAfterLog() {
+		System.out.println("After code...");
+	}
+     
+	@Test
+	@Tag(value = "regression")
+	void depositTest() {
+		assertEquals(15000, BankAccount.deposit(5000));
+	}
+	
+	@Test
+	@Tag(value = "critical")
+	void withdrawTest() {
+		assertEquals(500, BankAccount.withdraw(5000));
+	}
+}

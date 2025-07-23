@@ -1,0 +1,5 @@
+package facadeassignment.tictactoe.model;
+
+public enum GameStatus {
+
+}

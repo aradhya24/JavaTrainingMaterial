@@ -1,0 +1,89 @@
+package facadeassignment.tictactoe.facade;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import facadeassignment.tictactoe.model.Board;
+import facadeassignment.tictactoe.model.GameEngine;
+import facadeassignment.tictactoe.model.Player;
+import facadeassignment.tictactoe.model.GameStatus;
+
+public class TicTacToeFacade {
+     
+	public static void startGame() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		
+		
+		int choice = -1 ;
+		
+		while(true) {
+			
+			System.out.print("\n1 -> Play Tic Tac Toe    2 -> EXIT : ");
+			
+			try {
+				choice = scanner.nextInt();
+			}
+			catch(InputMismatchException e){
+				System.out.println("Input Mismatch , plz enter numbers only");
+				scanner.next();
+				continue;
+			}
+			
+			
+			System.out.print("Enter name for Player 1 : ");
+			String player1 = scanner.nextLine();
+			System.out.print("Enter name for Player 2 : ");
+			String player2 = scanner.nextLine();
+			
+			Player p1 = new Player(player1 , 'X');
+			Player p2 = new Player(player2 , 'O');
+			
+			
+			switch(choice) {
+			
+			case 1: 
+				
+				Board board = new Board();
+				GameEngine gameEngine = new GameEngine(p1 , p2);
+				
+				board.displayBoard();
+				
+				boolean gameEnd = false;
+				
+				while(!gameEnd) {
+					
+					GameStatus status = gameEngine.playTurn(board);
+					
+					switch(status) {
+					
+					case WIN:
+						System.out.println("\n\n" + gameEngine.getCurrentPlayer().getName() + " Wins the Game! Congratulations!\n");
+						gameEnd = true;
+						break;
+						
+					case CONTINUE:
+						gameEngine.switchPlayer();
+						break;
+						
+					case DRAW:
+						System.out.println("\n\nSorry, the Game is a DRAW......\n");
+						gameEnd = true;
+						break;
+					}
+				}
+				
+				break;
+				
+			case 2:
+				System.out.println("\nSystem Exited ....");
+				return;
+				
+			default:
+				System.out.println("Wrong Choice, please enter again!");
+			}
+		}
+	}
+}

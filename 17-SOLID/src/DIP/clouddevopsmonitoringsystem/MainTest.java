@@ -1,0 +1,14 @@
+package DIP.clouddevopsmonitoringsystem;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+       
+		CloudProviderDIP aws = new CloudProviderDIP(new AWS());
+		aws.logs();
+		
+		CloudProviderDIP gcp = new CloudProviderDIP(new GCP());
+		gcp.logs();
+	}
+
+}

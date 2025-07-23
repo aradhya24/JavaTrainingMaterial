@@ -1,0 +1,10 @@
+package ii__Structural.e__bridge;
+
+public class Radio implements IDevice {
+    public void turnOn() {
+        System.out.println("Radio is ON");
+    }
+    public void turnOff() {
+        System.out.println("Radio is OFF");
+    }
+}

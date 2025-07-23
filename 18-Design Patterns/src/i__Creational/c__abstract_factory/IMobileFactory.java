@@ -1,0 +1,7 @@
+package i__Creational.c__abstract_factory;
+
+public interface IMobileFactory {
+    Phone createPhone();
+    Tablet createTablet();
+}
+

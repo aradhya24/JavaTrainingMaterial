@@ -1,0 +1,18 @@
+package com.aurionpro.stringprocessortestsuit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class StringProcessorTest {
+    
+	@Test
+	void isPalindromeTest() {
+		assertEquals(true, StringProcessor.isPalindrome("mom"));
+	}
+	
+	@Test
+	void reverseTest() {
+		assertEquals("eurt", StringProcessor.reverse("true"));
+	}
+}

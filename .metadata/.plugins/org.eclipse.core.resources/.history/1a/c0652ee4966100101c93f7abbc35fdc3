@@ -1,0 +1,13 @@
+package LSP.vehiclefleetmgmt;
+
+public class ElectricCar implements IVehicle {
+
+	@Override
+	public void refillType() {
+		System.out.println("Electric car  -> Refill type : Electricity (Charging)");
+		
+	}
+
+	
+
+}

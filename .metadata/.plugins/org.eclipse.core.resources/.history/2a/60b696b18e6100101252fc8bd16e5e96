@@ -1,0 +1,6 @@
+package OCP.solution.insuranceclaimprocessing;
+
+public class ClaimProcessor {
+     String claimType;
+     abstract String getInsuranceType();
+}

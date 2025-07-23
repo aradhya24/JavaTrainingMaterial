@@ -1,0 +1,14 @@
+package strategyassighnment.guitar.behaviour.sound;
+
+import java.time.Instant;
+import java.time.InstantSource;
+
+public class Acoustic implements InstantSource {
+
+	@Override
+	public Instant instant() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

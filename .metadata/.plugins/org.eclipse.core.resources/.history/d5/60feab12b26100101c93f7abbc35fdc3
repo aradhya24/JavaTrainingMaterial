@@ -1,0 +1,7 @@
+package DIP.clouddevopsmonitoringsystem;
+
+public class CloudProviderDIP {
+    private IDashboardService dashboardService;
+    
+    
+}

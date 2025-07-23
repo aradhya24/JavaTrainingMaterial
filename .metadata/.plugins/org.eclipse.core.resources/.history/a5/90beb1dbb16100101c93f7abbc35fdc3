@@ -1,0 +1,11 @@
+package DIP.clouddevopsmonitoringsystem;
+
+public class GCP implements IDashboardService {
+
+	@Override
+	public void getLogs() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

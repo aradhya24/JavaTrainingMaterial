@@ -1,0 +1,31 @@
+package com.aurionpro.calculator.solution.model;
+
+import SRP.solution.calculator.Addition;
+import SRP.solution.calculator.Calculator;
+import SRP.solution.calculator.Division;
+import SRP.solution.calculator.Multiplication;
+import SRP.solution.calculator.Subtraction;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+         
+		Calculator calculator = new Calculator(10, 5);
+		
+		Addition addition = new Addition();
+		System.out.println("Addition : " + addition.add(calculator.getNumber1(), calculator.getNumber2()));
+		
+		
+		Subtraction subtract = new Subtraction();
+		System.out.println("Subtraction : " + subtract.subtract(calculator.getNumber1(), calculator.getNumber2()));
+		
+		Multiplication muliply = new Multiplication();
+		System.out.println("Multiplication : " + muliply.multiply(calculator.getNumber1(), calculator.getNumber2()));
+		
+		Division divide = new Division();
+		System.out.println("Division : " + divide.divide(calculator.getNumber1(), calculator.getNumber2()));
+		
+		
+	}
+
+}

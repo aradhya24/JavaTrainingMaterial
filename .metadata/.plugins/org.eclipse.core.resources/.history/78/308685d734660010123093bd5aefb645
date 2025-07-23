@@ -1,0 +1,9 @@
+package facadeassignment.tictactoe.test;
+
+import facadeassignment.tictactoe.facade.TicTacToeFacade;
+
+public class Main {
+         
+		TicTacToeFacade.startGame();
+	}
+}

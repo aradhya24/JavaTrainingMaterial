@@ -1,0 +1,10 @@
+package strategyassighnment.guitar.model;
+
+public class AcousticGuitar extends Guitar{
+
+	@Override
+	public void showGuitarInfo() {
+		System.out.println("Guitar type : Acoustic Guitar");
+	}
+
+}

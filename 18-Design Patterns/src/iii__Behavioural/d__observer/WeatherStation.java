@@ -1,0 +1,27 @@
+package iii__Behavioural.d__observer;
+
+import java.util.*;
+
+public class WeatherStation implements Subject {
+    private List<Observer> observers = new ArrayList<>();
+    private float temperature;
+
+    public void addObserver(Observer o) {
+        observers.add(o);
+    }
+
+    public void removeObserver(Observer o) {
+        observers.remove(o);
+    }
+
+    public void setTemperature(float temperature) {
+        this.temperature = temperature;
+        notifyObservers(); // automatically notify when data changes
+    }
+
+    public void notifyObservers() {
+        for (Observer o : observers) {
+            o.update(temperature);
+        }
+    }
+}

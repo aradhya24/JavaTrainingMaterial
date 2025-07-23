@@ -1,0 +1,5 @@
+package i__Creational.e__prototype;
+
+public interface IShape extends Cloneable {
+    Shape clone(); // Prototype method
+}

@@ -1,0 +1,28 @@
+package SOLID.InventoryMS.test;
+
+import java.util.Arrays;
+import java.util.List;
+
+import javax.xml.validation.Validator;
+
+import SOLID.InventoryMS.coreservice.InventoryService;
+import SOLID.InventoryMS.coreservice.ReorderService;
+import SOLID.InventoryMS.notification.EmailNotifier;
+import SOLID.InventoryMS.notification.INotifier;
+import SOLID.InventoryMS.notification.SMSNotifier;
+import SOLID.InventoryMS.valuation.FIFOValuation;
+import SOLID.InventoryMS.valuation.IValuationStrategy;
+
+public class InventoryMSTest {
+
+	public static void main(String[] args) {
+         
+		
+		List<INotifier> notifiers = Arrays.asList(new SMSNotifier(),new EmailNotifier());
+		ReorderService reorderService = new ReorderService();
+		IValuationStrategy valuationStrategy = new FIFOValuation();
+		
+		InventoryService inventoryService = new InventoryService(notifiers, reorderService, valuationStrategy)
+	}
+
+}

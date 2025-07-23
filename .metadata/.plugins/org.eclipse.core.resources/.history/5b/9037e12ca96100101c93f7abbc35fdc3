@@ -1,0 +1,5 @@
+package ISP.fooddeleiveryplatform;
+
+public interface IRestaurantOps {
+
+}

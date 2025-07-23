@@ -1,0 +1,26 @@
+package i__Creational.a__singleton;
+
+public class Aradhya {
+      
+	// Create a private static variable of the same class
+	private static Aradhya aradhya;
+	
+    //Make constructor private so no one can create object from outside
+	private Aradhya() {
+		System.out.println("Aradhya object created");
+	}
+	
+	//Create a public static method to get the instance
+	public static Aradhya getInstance() {
+		if(aradhya == null) {
+		   aradhya = new Aradhya();
+		}
+		return aradhya;
+	}
+	
+	
+	// Any method inside singleton
+	public void message() {
+		System.out.println("This is aradhya....");
+	}
+}

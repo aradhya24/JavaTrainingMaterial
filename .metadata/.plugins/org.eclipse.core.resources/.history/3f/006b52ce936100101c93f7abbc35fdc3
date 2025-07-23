@@ -1,0 +1,11 @@
+package LSP.solution.bankingsystem;
+
+public class FixedDepositAccount implements IDeposit {
+
+	@Override
+	public void deposit() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package facadeassignment.tictactoe.facade;
+
+import java.util.Scanner;
+
+import facadeassignment.tictactoe.model.GameEngine;
+
+public class TicTacToeFacade {
+     
+	public void startGame() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter name for Player 1 : ");
+		String player1 = scanner.nextLine();
+		System.out.println("Enter name for Player 1 : ");
+		String player2 = scanner.nextLine();
+		
+		GameEngine gameEngine = new GameEngine(player1 , player2);
+		
+		
+	}
+}

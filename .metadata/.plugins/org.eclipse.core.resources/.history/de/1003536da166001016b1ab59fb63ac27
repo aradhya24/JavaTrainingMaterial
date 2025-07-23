@@ -1,0 +1,38 @@
+package com.aurionpro.nestedstudentgradevalidator;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.DisplayName;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+
+public class GradeValidatorTest {
+       
+	GradeValidator gradeValidator = new GradeValidator();
+	
+	@Nested
+	class GradeValidChecker {
+		
+		@DisplayName("Grade is valid checking")
+		@ParameterizedTest
+		@ValueSource(ints = {34,24,59})
+		void isGradeValidTest(int grade) {
+			assertTrue(gradeValidator.isGradeValid(grade) , grade + " should be valid");
+		}
+	}	
+		
+	@Nested
+	class GradeCategory{
+		@DisplayName("Grade Category checking")
+		@ParameterizedTest
+		@ValueSource(ints = {34,24,59})
+		void gradeCategoryTest(int grade) {
+			assertEquals(gradeValidator.getGradeCategory(grade) , grade);
+		}
+		
+	}
+}

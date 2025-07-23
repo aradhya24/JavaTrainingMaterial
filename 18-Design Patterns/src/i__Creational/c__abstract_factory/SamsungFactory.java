@@ -1,0 +1,11 @@
+package i__Creational.c__abstract_factory;
+
+public class SamsungFactory implements IMobileFactory {
+    public Phone createPhone() {
+        return new GalaxyPhone();
+    }
+
+    public Tablet createTablet() {
+        return new GalaxyTablet();
+    }
+}

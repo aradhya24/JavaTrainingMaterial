@@ -1,0 +1,11 @@
+package Creational.abstract_factory;
+
+public class SamsungFactory implements MobileFactory {
+    public Phone createPhone() {
+        return new GalaxyPhone();
+    }
+
+    public Tablet createTablet() {
+        return new GalaxyTab();
+    }
+}

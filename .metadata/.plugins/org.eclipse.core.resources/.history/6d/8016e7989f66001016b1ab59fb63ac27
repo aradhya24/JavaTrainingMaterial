@@ -1,0 +1,11 @@
+package com.aurionpro.nestedstudentgradevalidator;
+
+public class GradeValidator {
+    
+	boolean isGradeValid(int grade) {
+		if(grade <= 100 && grade >= 0) {
+			return true;
+		}
+		return false;
+	}
+}

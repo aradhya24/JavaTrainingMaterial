@@ -1,0 +1,30 @@
+package iii__Behavioural.f__command;
+
+public class ConcreteCommandClasses {
+
+}
+
+ class TurnOnTVCommand implements Command {
+    private TV tv;
+
+    public TurnOnTVCommand(TV tv) {
+        this.tv = tv;
+    }
+
+    public void execute() {
+        tv.turnOn();
+    }
+}
+
+ class TurnOffTVCommand implements Command {
+    private TV tv;
+
+    public TurnOffTVCommand(TV tv) {
+        this.tv = tv;
+    }
+
+    public void execute() {
+        tv.turnOff();
+    }
+}
+

@@ -1,0 +1,19 @@
+package strategyassighnment.guitar.test;
+
+import strategyassighnment.guitar.behaviour.playingstyle.FingerPicking;
+import strategyassighnment.guitar.model.AcousticGuitar;
+import strategyassighnment.guitar.model.Guitar;
+
+public class GuitarTest {
+
+	public static void main(String[] args) {
+		
+		Guitar guitar = new AcousticGuitar();
+		
+		guitar.setPlayingStyleBehaviour(new FingerPicking());
+		guitar.changePlayingStyle();
+		
+
+	}
+
+}

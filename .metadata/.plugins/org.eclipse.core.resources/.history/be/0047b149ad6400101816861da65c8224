@@ -1,0 +1,7 @@
+package ii__Structural.e__bridge;
+
+public interface Device {
+    void turnOn();
+    void turnOff();
+}
+

@@ -1,0 +1,13 @@
+package com.aurionpro.bankaccoperations;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+public class BankAccountTest {
+     
+	@Test
+	void depositTest() {
+		assertEquals(15000.0, BankAccount.deposit(5000.0));
+	}
+}

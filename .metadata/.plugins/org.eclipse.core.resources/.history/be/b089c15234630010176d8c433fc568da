@@ -1,0 +1,63 @@
+package SOLID.InventoryMS.coreservice;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import SOLID.InventoryMS.model.Product;
+import SOLID.InventoryMS.notification.INotifier;
+import SOLID.InventoryMS.valuation.IValuationStrategy;
+
+public class InventoryService {
+	private Map<String, Product> inventory = new HashMap<>();
+	private List<INotifier> notifiers;
+	private ReorderService reorderService;
+	private IValuationStrategy valuationStrategy;
+
+	public InventoryService(List<INotifier> notifiers, ReorderService reorderService,
+			IValuationStrategy valuationStrategy) {
+		this.notifiers = notifiers;
+		this.reorderService = reorderService;
+		this.valuationStrategy = valuationStrategy;
+	}
+
+	public void addProduct(Product product) {
+		inventory.put(product.getProductName(), product);
+	}
+
+	public void removeStock(String productName, int quantity) {
+
+		Product product = inventory.get(productName);
+
+		if (product != null && product.getStock() >= quantity) {
+			product.removeStock(quantity);
+			System.out.println("Stock updated: Removed " + quantity + " units of '" + product.getProductName());
+
+			System.out.println("Current Stock for '" + productName + "' : " + product.getStock());
+
+			if (product.getStock() < product.getReorderThreshold()) {
+				System.out.println("Reorder threshold reached for '" + productName + "'. Triggering reorder...");
+				product.addStock(20);
+				reorderService.reorder(product, 20);
+			}
+		}
+	}
+
+	public void notifyAll(String message) {
+		for (INotifier notifier : notifiers) {
+			notifier.sendNotification(message);
+			;
+		}
+	}
+
+	public void getInventoryValue() {
+		Map<Product, Integer> inv = new HashMap<>();
+		for (Product p : inventory.values()) {
+			inv.put(p, p.getStock());
+		}
+		double value = valuationStrategy.calculateValue(inv);
+		System.out.println("Total inventory value (using "
+				+ valuationStrategy.getClass().getSimpleName().replace("Valuation", "") + "): $" + value);
+	}
+
+}

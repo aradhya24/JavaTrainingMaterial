@@ -1,0 +1,12 @@
+package SOLID.InventoryMS.notification;
+
+import SOLID.InventoryMS.model.Product;
+
+public class EmailNotifier implements INotifier {
+
+	@Override
+	public void sendNotification(Product product) {
+		System.out.println("[Email] notification sent of product : " + product.getProductName());
+	}
+
+}

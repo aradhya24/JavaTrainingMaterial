@@ -1,0 +1,24 @@
+package strategyassighnment.guitar.model;
+
+import strategyassighnment.guitar.behaviour.sound.Distortion;
+import strategyassighnment.guitar.behaviour.sound.Electric;
+import strategyassighnment.guitar.behaviour.tuning.StandardTuning;
+
+public class ElectricGuitar extends Guitar{
+	@Override
+	public void showGuitarInfo() {
+		System.out.println("Guitar type : Acoustic Guitar");
+	}
+    
+	@Override
+	public void changeSound() {
+		System.out.println("Default");
+		setSoundBehaviour(new Electric());
+	}
+	
+	@Override
+	public void changeTune() {
+		System.out.println("Default");
+		setTuningBehaviour(new Distortion());
+	}
+}

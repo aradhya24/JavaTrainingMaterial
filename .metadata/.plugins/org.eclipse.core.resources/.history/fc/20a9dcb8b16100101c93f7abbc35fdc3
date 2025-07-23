@@ -1,0 +1,11 @@
+package DIP.clouddevopsmonitoringsystem;
+
+public class Azure implements IDashboardService {
+
+	@Override
+	public void getLogs() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

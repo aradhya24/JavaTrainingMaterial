@@ -1,0 +1,11 @@
+package ISP.industrialiotmonitoring;
+
+public class IotMonitoringTest {
+     public static void main(String[] args) {
+		
+    	 IReadableSensors simplePassiveSensor = new SimplePassiveSensor();
+    	 System.out.println("simplePassiveSensor reading : " + simplePassiveSensor.getReading());
+    	 
+    	 
+	}
+}

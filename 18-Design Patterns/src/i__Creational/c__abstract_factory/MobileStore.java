@@ -1,0 +1,16 @@
+package i__Creational.c__abstract_factory;
+
+public class MobileStore {
+    private Phone phone;
+    private Tablet tablet;
+
+    public MobileStore(IMobileFactory factory) {
+        phone = factory.createPhone();
+        tablet = factory.createTablet();
+    }
+
+    public void buildDevices() {
+        phone.build();
+        tablet.build();
+    }
+}

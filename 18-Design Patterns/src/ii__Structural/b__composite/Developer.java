@@ -1,0 +1,18 @@
+package ii__Structural.b__composite;
+
+public class Developer implements IEmployee {
+	
+	//	leaf class
+    private String name;
+    private int id;
+
+    public Developer(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public void showDetails() {
+        System.out.println("Developer: " + name + ", ID: " + id);
+    }
+}
+

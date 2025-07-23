@@ -1,0 +1,13 @@
+package SOLID.InventoryMS.model;
+
+import SOLID.InventoryMS.notification.INotifier;
+
+public class SMSNotifier implements INotifier {
+
+	@Override
+	public void sendNotification(Product product) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

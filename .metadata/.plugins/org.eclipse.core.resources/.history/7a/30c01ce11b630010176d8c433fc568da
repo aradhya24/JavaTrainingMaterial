@@ -1,0 +1,8 @@
+package SOLID.InventoryMS.model;
+
+public class Product {
+     private String productName;
+     private int stock;
+     private double pricePerUnit;
+     private int 
+}

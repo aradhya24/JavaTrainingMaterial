@@ -1,0 +1,11 @@
+package LSP.ecommercepromotions;
+
+public class NoDiscount implements IDiscount {
+
+	@Override
+	public void applyDiscount() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

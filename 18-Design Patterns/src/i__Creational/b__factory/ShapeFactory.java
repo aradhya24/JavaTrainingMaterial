@@ -1,0 +1,13 @@
+package i__Creational.b__factory;
+
+public class ShapeFactory {
+    public IShape getShape(String type) {
+        if (type.equalsIgnoreCase("circle")) {
+            return new Circle();
+        } else if (type.equalsIgnoreCase("square")) {
+            return new Square();
+        }
+        return null;
+    }
+}
+

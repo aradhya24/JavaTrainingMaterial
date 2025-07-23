@@ -1,0 +1,26 @@
+package com.aurionpro.stringprocessortestsuit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Nested;
+
+public class StringProcessorTest {
+    
+	@Tag(value = "fast")
+	@Test
+	void isPalindromeTest() {
+		assertEquals(true, StringProcessor.isPalindrome("mom"));
+	}
+	
+	@Nested
+	class ReverseTest{
+		
+	}
+	@RepeatedTest(value = 3)
+	void reverseTest() {
+		assertEquals("eurt", StringProcessor.reverse("true"));
+	}
+}

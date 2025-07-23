@@ -1,0 +1,19 @@
+package strategyassighnment.guitar.model;
+
+import strategyassighnment.guitar.behaviour.sound.Acoustic;
+import strategyassighnment.guitar.behaviour.tuning.StandardTuning;
+
+public class AcousticGuitar extends Guitar{
+	
+	public AcousticGuitar() {
+		setSoundBehaviour(new Acoustic());
+		System.out.print("Default ");
+		changeSound();
+        setTuningBehaviour(new StandardTuning());
+	}
+
+	@Override
+	public void showGuitarInfo() {
+		System.out.println("Guitar type : Acoustic Guitar");
+	}	
+}

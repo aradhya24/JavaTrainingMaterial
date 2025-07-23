@@ -1,0 +1,143 @@
+package strategyassighnment.guitar.test;
+
+import java.util.Scanner;
+
+import strategyassighnment.guitar.behaviour.playingstyle.FingerPicking;
+import strategyassighnment.guitar.behaviour.playingstyle.Strumming;
+import strategyassighnment.guitar.behaviour.playingstyle.Tapping;
+import strategyassighnment.guitar.behaviour.sound.Acoustic;
+import strategyassighnment.guitar.behaviour.sound.Distortion;
+import strategyassighnment.guitar.behaviour.sound.Electric;
+import strategyassighnment.guitar.behaviour.tuning.DropDTuning;
+import strategyassighnment.guitar.behaviour.tuning.StandardTuning;
+import strategyassighnment.guitar.model.AcousticGuitar;
+import strategyassighnment.guitar.model.ElectricGuitar;
+import strategyassighnment.guitar.model.Guitar;
+
+public class GuitarTest {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        Guitar selectedGuitar = null;
+
+        // Guitar Type Selection with Exit Option
+        while (true) {
+            System.out.println("Select Guitar Type:");
+            System.out.println("1. Acoustic Guitar");
+            System.out.println("2. Electric Guitar");
+            System.out.println("9. Exit Guitar Selection");
+            int guitarType = scanner.nextInt();
+
+            if (guitarType == 9) {
+                System.out.println("Exiting program...");
+                System.exit(0);
+            }
+
+            if (guitarType == 1) {
+                selectedGuitar = new AcousticGuitar();
+                break;
+            } else if (guitarType == 2) {
+                selectedGuitar = new ElectricGuitar();
+                break;
+            } else {
+                System.out.println("Invalid choice. Try again or press 9 to exit.");
+            }
+        }
+
+        // Main Operation Loop
+        while (true) {
+            System.out.println("\nChoose Operation:");
+            System.out.println("1. Change Playing Style");
+            System.out.println("2. Change Sound");
+            System.out.println("3. Change Tuning");
+            System.out.println("4. Show Guitar Info");
+            System.out.println("5. Polish Guitar");
+            System.out.println("6. Exit");
+
+            int action = scanner.nextInt();
+
+            switch (action) {
+                case 1:
+                    while (true) {
+                        System.out.println("Choose Playing Style:");
+                        System.out.println("1. Strumming");
+                        System.out.println("2. Finger Picking");
+                        System.out.println("3. Tapping");
+                        System.out.println("9. Exit Playing Style Menu");
+                        int style = scanner.nextInt();
+                        if (style == 9) break;
+                        switch (style) {
+                            case 1: selectedGuitar.setPlayingStyleBehaviour(new Strumming()); break;
+                            case 2: selectedGuitar.setPlayingStyleBehaviour(new FingerPicking()); break;
+                            case 3: selectedGuitar.setPlayingStyleBehaviour(new Tapping()); break;
+                            default: 
+                                System.out.println("Invalid playing style. Try again or press 9 to exit.");
+                                continue;
+                        }
+                        selectedGuitar.playStyle();
+                        break;
+                    }
+                    break;
+
+                case 2:
+                    while (true) {
+                        System.out.println("Choose Sound Type:");
+                        System.out.println("1. Acoustic");
+                        System.out.println("2. Electric");
+                        System.out.println("3. Distortion");
+                        System.out.println("9. Exit Sound Menu");
+                        int sound = scanner.nextInt();
+                        if (sound == 9) break;
+                        switch (sound) {
+                            case 1: selectedGuitar.setSoundBehaviour(new Acoustic()); break;
+                            case 2: selectedGuitar.setSoundBehaviour(new Electric()); break;
+                            case 3: selectedGuitar.setSoundBehaviour(new Distortion()); break;
+                            default:
+                                System.out.println("Invalid sound type. Try again or press 9 to exit.");
+                                continue;
+                        }
+                        selectedGuitar.sound();
+                        break;
+                    }
+                    break;
+
+                case 3:
+                    while (true) {
+                        System.out.println("Choose Tuning:");
+                        System.out.println("1. Standard Tuning");
+                        System.out.println("2. Drop D Tuning");
+                        System.out.println("9. Exit Tuning Menu");
+                        int tune = scanner.nextInt();
+                        if (tune == 9) break;
+                        switch (tune) {
+                            case 1: selectedGuitar.setTuningBehaviour(new StandardTuning()); break;
+                            case 2: selectedGuitar.setTuningBehaviour(new DropDTuning()); break;
+                            default:
+                                System.out.println("Invalid tuning. Try again or press 9 to exit.");
+                                continue;
+                        }
+                        selectedGuitar.tune();
+                        break;
+                    }
+                    break;
+
+                case 4:
+                    selectedGuitar.showGuitarInfo();
+                    break;
+
+                case 5:
+                    selectedGuitar.polish();
+                    break;
+
+                case 6:
+                    System.out.println("Goodbye!");
+                    System.exit(0);
+
+                default:
+                    System.out.println("Invalid main menu choice. Try again.");
+            }
+        }
+    }
+}

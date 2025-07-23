@@ -1,0 +1,7 @@
+package Creational.abstract_factory;
+
+public class GalaxyTablet implements Tablet {
+    public void build() {
+        System.out.println("Building Samsung Galaxy Tab");
+    }
+}

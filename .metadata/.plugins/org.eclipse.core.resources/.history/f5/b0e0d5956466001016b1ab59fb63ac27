@@ -1,0 +1,11 @@
+package com.aurionpro.bankaccoperations;
+
+import static org.junit.Assert.assertEquals;
+public class BankAccountTest {
+     
+	
+	@SuppressWarnings("deprecation")
+	void depositTest() {
+		assertEquals(15000, BankAccount.deposit(5000));
+	}
+}

@@ -1,0 +1,16 @@
+package SOLID.InventoryMS.coreservice;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import SOLID.InventoryMS.model.Product;
+import SOLID.InventoryMS.notification.INotifier;
+import SOLID.InventoryMS.valuation.IValuationStrategy;
+
+public class InventoryService {
+	  Map<String, Product> inventory = new HashMap<>();
+      List<INotifier> notifiers;
+      private ReorderService reorderService;
+      private IValuationStrategy valuationStrategy;
+}

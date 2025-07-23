@@ -1,0 +1,7 @@
+package SOLID.InventoryMS.notification;
+
+import SOLID.InventoryMS.model.Product;
+
+public interface INotifier {
+      void sendNotification(String message);
+}

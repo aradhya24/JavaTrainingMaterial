@@ -1,0 +1,14 @@
+package ii__Structural.e__bridge;
+
+
+public class Main {
+    public static void main(String[] args) {
+        IDevice tv = new TV();
+        RemoteControl remote = new BasicRemote(tv);
+        remote.pressPowerButton(); // Output: TV is ON
+
+        IDevice radio = new Radio();
+        remote = new BasicRemote(radio);
+        remote.pressPowerButton(); // Output: Radio is ON
+    }
+}

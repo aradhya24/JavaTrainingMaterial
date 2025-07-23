@@ -1,0 +1,5 @@
+package LSP.solution.bankingsystem;
+
+public interface IDeposit {
+
+}

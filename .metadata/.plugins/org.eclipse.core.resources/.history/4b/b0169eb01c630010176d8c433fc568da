@@ -1,0 +1,5 @@
+package SOLID.Valuation;
+
+public class IValuationStrategy {
+
+}

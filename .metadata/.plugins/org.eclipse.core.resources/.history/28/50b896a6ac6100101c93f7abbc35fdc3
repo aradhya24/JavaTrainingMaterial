@@ -1,0 +1,11 @@
+package ISP.industrialiotmonitoring;
+
+public class SimplePassiveSensor implements IReadableSensors {
+
+	@Override
+	public double getReading() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

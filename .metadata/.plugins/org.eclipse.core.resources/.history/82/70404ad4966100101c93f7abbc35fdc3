@@ -1,0 +1,11 @@
+package LSP.vehiclefleetmgmt;
+
+public class FuelVehicle implements IVehicle {
+
+	@Override
+	public void refillType() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

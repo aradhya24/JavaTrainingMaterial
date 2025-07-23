@@ -1,0 +1,14 @@
+package OCP.solution.e_walletapp;
+
+public class OfferEngineTest {
+
+	public static void main(String[] args) {
+		
+		IOfferEngine engine = new UPITransaction();
+		System.out.println("Upi transaction discount : " + engine.getDiscount() + "%");
+		System.out.println("Card transaction discount : " + new CardTransaction().getDiscount() + "%");
+		System.out.println("Cash transaction discount : " + new CashTransaction().getDiscount() + "%");
+
+	}
+
+}

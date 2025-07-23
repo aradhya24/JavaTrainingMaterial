@@ -1,0 +1,16 @@
+package SRP.solution.ecommerce;
+
+public class Product {
+    private String productName;
+    private double price;
+    
+    
+	public Product(String productName, double price) {
+		super();
+		this.productName = productName;
+		this.price = price;
+	}
+    
+    
+    
+}
