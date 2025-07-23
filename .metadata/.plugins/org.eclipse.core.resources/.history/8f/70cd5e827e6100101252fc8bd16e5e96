@@ -1,8 +1,0 @@
-package SRP.solution.ecommerce;
-
-public class ProductInformation {
-    
-	static Product product = new Product();
-	
-	
-}

@@ -1,5 +1,0 @@
-package LSP.ecommercepromotions;
-
-public interface IDiscount {
-
-}

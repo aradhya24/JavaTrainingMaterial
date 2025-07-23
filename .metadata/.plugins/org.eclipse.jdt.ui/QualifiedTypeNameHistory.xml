@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="OCP.solution.insuranceclaimprocessing.LifeInsurance"/>
     <fullyQualifiedTypeName name="OCP.solution.insuranceclaimprocessing.HealthInsurance"/>
     <fullyQualifiedTypeName name="OCP.solution.insuranceclaimprocessing.VehicleInsurance"/>
     <fullyQualifiedTypeName name="java.util.function.IntUnaryOperator"/>
@@ -26,11 +25,8 @@
     <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.sound.ISoundBehaviour"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.tuning.ITuningBehaviour"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.sound.Acoustic"/>
-    <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.tuning.StandardTuning"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.model.ElectricGuitar"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.sound.Electric"/>
-    <fullyQualifiedTypeName name="strategyassighnment.guitar.model.Guitar"/>
-    <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.playingstyle.FingerPicking"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.model.AcousticGuitar"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.sound.Distortion"/>
     <fullyQualifiedTypeName name="strategyassighnment.guitar.inputservice.GuitarTypes"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Nested"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.CsvSource"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="strategyassighnment.guitar.model.Guitar"/>
+    <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.playingstyle.FingerPicking"/>
+    <fullyQualifiedTypeName name="strategyassighnment.guitar.behaviour.tuning.StandardTuning"/>
 </qualifiedTypeNameHistroy>

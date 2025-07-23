@@ -4,7 +4,7 @@ public class Strumming implements IPlayingStyleBehaviour{
 
 	@Override
 	public void play() {
-		System.out.println("Playing style : Strumming");
+		System.out.print("Playing style : Strumming  |  ");
 	}
 
 }

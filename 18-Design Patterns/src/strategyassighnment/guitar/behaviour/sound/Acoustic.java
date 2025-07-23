@@ -5,7 +5,7 @@ public class Acoustic implements ISoundBehaviour {
 
 	@Override
 	public void sound() {
-		System.out.println("Sound Type : Acoustic");
+		System.out.print("Sound Type : Acoustic  |  ");
 	}
 
 }

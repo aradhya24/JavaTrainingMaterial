@@ -4,7 +4,7 @@ public class Tapping implements IPlayingStyleBehaviour {
 
 	@Override
 	public void play() {
-		System.out.println("Playing style : Tapping");
+		System.out.print("Playing style : Tapping  |  ");
 	}
 
 }

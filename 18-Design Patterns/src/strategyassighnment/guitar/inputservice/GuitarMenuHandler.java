@@ -25,7 +25,7 @@ public class GuitarMenuHandler {
             System.out.println("3. Change Tuning");
             System.out.println("4. Show Guitar Info");
             System.out.println("5. Polish Guitar");
-            System.out.println("6. Exit");
+            System.out.println("6. GO Back");
 
             int action = getInput();
 

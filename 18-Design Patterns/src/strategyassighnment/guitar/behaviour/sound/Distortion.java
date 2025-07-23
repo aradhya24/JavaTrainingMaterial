@@ -4,7 +4,7 @@ public class Distortion implements ISoundBehaviour {
 
 	@Override
 	public void sound() {
-		System.out.println("Sound Type : Distortion");
+		System.out.print("Sound Type : Distortion  |  ");
 	}
 
 }

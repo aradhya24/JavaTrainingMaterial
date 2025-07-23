@@ -1,6 +1,0 @@
-package OCP.solution.lms;
-
-public interface ContentRenderer {
-
-    abstract String contentType();
-}
