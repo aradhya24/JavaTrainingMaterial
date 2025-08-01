@@ -1,5 +1,0 @@
-package ii__Structural.a__adapter;
-
-public interface TypeCCharger {
-
-}

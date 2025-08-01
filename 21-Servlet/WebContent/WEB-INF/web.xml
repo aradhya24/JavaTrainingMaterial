@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	
+<!-- <display-name>28 - servlet</display-name>
+
+<servlet>
+<servlet-name>first</servlet-name>
+<servlet-class>com.aurionpro.with_xml_file.FirstServlet</servlet-class>
+</servlet>
+
+servlet Mapping
+
+<servlet-mapping>
+<servlet-name>first</servlet-name>
+<url-pattern>/aradhya</url-pattern>
+</servlet-mapping> -->
+
+
+
+<!-- <context-param>
+<param-name>Company Name</param-name>
+<param-value>Aurionpro</param-value>
+</context-param>
+
+
+    <servlet>
+        <servlet-name>LandingServlet</servlet-name>
+        <servlet-class>com.bookverse.LandingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LandingServlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookCategoryServlet</servlet-name>
+        <servlet-class>com.bookverse.BookCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookCategoryServlet</servlet-name>
+        <url-pattern>/category</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminConfigServlet</servlet-name>
+        <servlet-class>com.bookverse.AdminConfigServlet</servlet-class>
+        <init-param>
+            <param-name>storeName</param-name>
+            <param-value>BookVerse</param-value>
+        </init-param>
+        <init-param>
+            <param-name>adminEmail</param-name>
+            <param-value>admin@bookverse.com</param-value>
+        </init-param>
+        <init-param>
+            <param-name>category</param-name>
+            <param-value>Science</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminConfigServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+ -->
+
+</web-app>

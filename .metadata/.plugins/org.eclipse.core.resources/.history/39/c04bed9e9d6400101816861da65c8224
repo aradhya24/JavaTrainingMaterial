@@ -1,5 +1,0 @@
-package Creational.abstract_factory;
-
-public class SamsungFactory {
-
-}

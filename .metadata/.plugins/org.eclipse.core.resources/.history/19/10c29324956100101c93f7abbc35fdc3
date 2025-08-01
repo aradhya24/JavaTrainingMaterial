@@ -1,5 +1,0 @@
-package DIP.solution.database;
-
-public interface IDatabase {
-     void connect();
-}

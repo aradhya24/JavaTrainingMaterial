@@ -1,6 +1,0 @@
-package iii__Behavioural.f__command;
-
-public public interface Command {
-    void execute();
-}
-

@@ -1,7 +1,0 @@
-package SRP.solution.iot_smarthomesystem;
-
-public class Device {
-    private String deviceId;
-    private String userId;
-    private String status;
-}

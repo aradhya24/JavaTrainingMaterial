@@ -4,7 +4,7 @@ public class StandardTuning implements ITuningBehaviour {
 
 	@Override
 	public void tuning() {
-		System.out.println("Tuning Type : Standard");
+		System.out.print("Tuning Type : Standard");
 	}
 
 }

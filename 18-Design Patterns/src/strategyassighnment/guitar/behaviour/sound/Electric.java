@@ -4,7 +4,7 @@ public class Electric implements ISoundBehaviour {
 
 	@Override
 	public void sound() {
-		System.out.println("Sound type : Electric");
+		System.out.print("Sound type : Electric  |  ");
 	}
 
 }

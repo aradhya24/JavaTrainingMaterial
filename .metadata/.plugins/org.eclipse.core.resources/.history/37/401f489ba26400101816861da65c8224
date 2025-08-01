@@ -1,5 +1,0 @@
-package i__Creational.e__prototype;
-
-public interface IShape {
-
-}

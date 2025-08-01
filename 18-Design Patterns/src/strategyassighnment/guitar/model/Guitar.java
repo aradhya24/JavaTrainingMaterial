@@ -9,7 +9,17 @@ public abstract class Guitar {
 	IPlayingStyleBehaviour playingStyleBehaviour;
 	ISoundBehaviour soundBehaviour;
 	ITuningBehaviour tuningBehaviour;
+    
+	protected String name;
+	
+	public Guitar(String name) {
+        this.name = name;
+    }
 
+    public String getName() {
+        return name;
+    }
+	
 	public abstract void showGuitarInfo();
 
 	// Universal method

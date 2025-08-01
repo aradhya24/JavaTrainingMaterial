@@ -1,5 +1,0 @@
-package SOLID.InventoryMS.notification;
-
-public interface INotifier {
-      void sendNotification();
-}

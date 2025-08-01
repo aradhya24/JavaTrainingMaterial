@@ -1,5 +1,0 @@
-package strategyassighnment.guitar.behaviour.tuning;
-
-public interface TuningBehaviour {
-     public void tuning();
-}

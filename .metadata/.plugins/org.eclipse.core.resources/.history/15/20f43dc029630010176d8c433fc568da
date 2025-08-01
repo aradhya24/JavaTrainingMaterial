@@ -1,5 +1,0 @@
-package SOLID.InventoryMS.valuation;
-
-public class FIFOValuation {
-
-}

@@ -1,5 +1,0 @@
-package SOLID.Valuation;
-
-public interface IValuationStrategy {
-
-}

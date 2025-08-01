@@ -1,5 +1,0 @@
-package SOLID.InventoryMS.valuation;
-
-public interface IValuationStrategy {
-    double calculateValue(Map<Product, Integer> inventory);
-}

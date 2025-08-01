@@ -1,5 +1,0 @@
-package iii__Behavioural.h__interpreter;
-
-public interface Expression {
-
-}

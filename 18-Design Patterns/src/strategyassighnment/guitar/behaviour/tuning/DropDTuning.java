@@ -4,7 +4,7 @@ public class DropDTuning implements ITuningBehaviour {
 
 	@Override
 	public void tuning() {
-		System.out.println("Tuning Type : Drop D");
+		System.out.print("Tuning Type : Drop D");
 	}
 
 }

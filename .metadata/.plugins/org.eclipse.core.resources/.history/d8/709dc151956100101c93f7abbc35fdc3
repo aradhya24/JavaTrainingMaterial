@@ -1,5 +1,0 @@
-package OCP.solution.e_walletapp;
-
-public interface IOfferEngine {
-    double getDiscount();
-}

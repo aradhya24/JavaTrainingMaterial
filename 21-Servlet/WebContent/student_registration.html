@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+
+    <h2>Student Information Form</h2>
+
+    <form action="submitStudent" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" ><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" ><br><br>
+
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course" >
+            <option value="">--Select--</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

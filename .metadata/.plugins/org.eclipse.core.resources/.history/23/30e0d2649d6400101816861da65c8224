@@ -1,7 +1,0 @@
-package Creational.abstract_factory;
-
-public interface MobileFactory {
-    Phone createPhone();
-    Tablet createTablet();
-}
-
